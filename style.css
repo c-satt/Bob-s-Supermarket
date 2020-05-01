@@ -1,5 +1,5 @@
 body {
-  color: white;
+  color: black;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif
   margin: 0;
   padding: 0;
@@ -26,9 +26,15 @@ header .navigation li {
   padding-left: 20px;
 }
 
-/*re-adjusts the text elements in the menu*/
-header .menu a{
-  position: relative;
-  /*lowers the top of the text elements to line up with the logo*/
-  top: 30px;
+body {
+  text-align: center;
+}
+
+footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: black;
+   text-align: center;
 }
