@@ -14,16 +14,23 @@
 				<ul>
 					<li class="menu"><a href="index.html">Homepage</a></li>
 					<li class="menu"><a href="items.html">Order</a></li>
-					<li class="menu"><a href="newCustomers.html">Customer</a></li>
+					<li class="menu"><a href="customers.html">Customer</a></li>
 					<li class="menu"><a href="distributors.html">Distributor</a>
 				</ul>
 		</header>
 
 		<section>
-			Order page where customers can see what items Bob's Supermarket carries.  
+			Items page that allows Bob's Supermarket to see the items they are selling, able to remove items they dont want to carry anymor, and check if they need more invetory. 
 
-			page will perform a SELECT for items.
+			Using SELECT, INSERT, and DELETE from the items table  
+			Using SELECT from the distributor table (fk: distributorId)
 
-			Customers will be able to add SELECTED items to their basket, remove items, and check out.  Customers to Sales is a M:M.  Sales to items is a 1:M
+			<!--Need TO DO: 
+				1. Create form to look up items (SELECT)
+					itemType, brand
+				2. allow that form to remove items (DELETE)
+				3. allow that form to link with specific distributors 
+				4. Create form to add new items into the system
+					itemType, brand, departmentCode, aisleNumber, description, shape, weight, price, taxable, qty, distributorId, saleId -->
 			
 		</section>
