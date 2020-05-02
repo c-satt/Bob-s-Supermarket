@@ -20,17 +20,45 @@
 		</header>
 
 		<section>
-			Customer page that allows Bob's Supermarket to see the customers that shop with them.  Bob's Supermarket can look up, add, drop, or update customer entry.  Customer page also allows Bob's Supermarket to see which customers are ordering which items
+			<h4>Customer page that allows Bob's Supermarket to see the customers that shop with them.  Bob's Supermarket can look up, add, drop, or update customer entry.  Customer page also allows Bob's Supermarket to see which customers are ordering which items
 
 			Using SELECT, INSERT UPDATE, and DELETE from the customes table 
-			Using SELECT from sales table (fk: saleId) and SELECT from the items table (fk: saleId)
+			Using SELECT from sales table (fk: saleId) and SELECT from the items table (fk: saleId)</h4>
 
-			<!--Need TO DO: 
-				1. Create form to look up customers (SELECT)
-					firstName, lastName, phoneNumber, email
-				2. allow that form to remove customers (DELETE)
-				3. allow that form to update customers (UPDATE)
-				3. Create form to add new customers into the system
-					firstName, lastName, phoneNumber, zipcode, email, memberDate  -->
+		<!--Need TO DO: 
+			* Allow that form to remove customers (DELETE)
+			* Allow that form to update customers (UPDATE) -->
+
+			<!--Create form to look up customers (SELECT)
+				firstName, lastName, phoneNumber, email-->
+			<div id="searchCustomer">
+				<form>
+					<fieldset>
+						<legend>Look up customer</legend>
+						<label>First name: <input type="text" name="firstName"></label>
+						<label>Last name: <input type="text" name="lastName"></label>
+						<label>Phone number: <input type="tel" name="phoneNumber"></label>
+						<label>Email: <input type="email" name="email"></label>
+						<button type="submit" id="customerSearch">SEARCH</button>
+					</fieldset>
+				</form>
+			</div>
+
+			<!--Create form to add new customers into the system
+				firstName, lastName, phoneNumber, zipcode, email, memberDate-->
+			<div id="searchCustomer">
+				<form>
+					<fieldset>
+						<legend>Add new customer</legend>
+						<label>First name: <input type="text" name="firstName"></label>
+						<label>Last name: <input type="text" name="lastName"></label>
+						<label>Phone number: <input type="tel" name="phoneNumber"></label>
+						<label>Zipcode: <input type="number" name="zipcoe"></label>
+						<label>Email: <input type="email" name="email"></label>
+						<label>Date Joined: <input type="date" name="memberDate"></label>
+						<button type="submit" id="customerAdd">ADD CUSTOMER</button>
+					</fieldset>
+				</form>
+			</div>
 		</section>
 		
