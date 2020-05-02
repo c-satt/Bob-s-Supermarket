@@ -6,6 +6,7 @@
 		<meta charset="UTF-8">
 		<title>Bob's Supermarket</title>
 		<link rel="stylesheet" href="style.css" type="text/css">
+		<link rel="stylesheet" type="text/css" href="tableStyle.css">
 	</head>
 
 	<body>
@@ -26,8 +27,7 @@
 			Using SELECT, DELETE from the items table (fk: itemId)</h4>
 
 			<!--Need TO DO: 
-				* Allow that form to remove distributors (DELETE)
-				* Allow that form to update distributors (UPDATE)-->
+				* Nothing -->
 
 
 			<!--Create form to look up distributors (SELECT)
@@ -63,5 +63,31 @@
 					</fieldset>
 				</form>
 			</div>
+
+			<!--Allow that form to remove distributors (DELETE), allow that form to update distributors (UPDATE)-->
+			<table>
+				<caption>Distributors</caption>
+				<thead>
+					<tr>
+						<!--Row 1 Headers-->
+						<th></th>
+						<th>Name</th>
+						<th>Phone number</th>
+						<th>Address</th>
+						<th>Update</th>
+						<th>Delete</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td>Example Distributor #1</td>
+						<td></td><td></td><td></td>
+						<td><button type="update" id="distributorUpdate">UPDATE</button></td>
+						<td><button type="delete" id="distributorDelete">DELETE</button></td>
+					</tr>
+				</tbody>
+			</table>
+
 		</section>
 		

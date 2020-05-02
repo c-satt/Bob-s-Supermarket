@@ -6,6 +6,7 @@
 		<meta charset="UTF-8">
 		<title>Bob's Supermarket</title>
 		<link rel="stylesheet" href="style.css" type="text/css">
+		<link rel="stylesheet" type="text/css" href="tableStyle.css">
 	</head>
 
 	<body>
@@ -26,7 +27,6 @@
 			Using SELECT from the distributor table (fk: distributorId)</h4>
 
 		<!--Need TO DO: 
-			* Allow search form to remove items (DELETE)
 			* Allow search form to link with specific distributors-->
 
 			<!--Create form to look up items (SELECT)
@@ -65,6 +65,7 @@
 				</form>
 			</div>
 
+			<!--Allow search form to remove items (DELETE) and update (UPDATE)-->
 			<table>
 				<caption>Items</caption>
 				<thead>
@@ -80,12 +81,17 @@
 						<th>Taxable</th>
 						<th>Quantity</th>
 						<th>Distributor</th>
+						<th>Update</th>
+						<th>Delete</th>
 					</tr>
 				</thead>
 
 				<tbody>
 					<tr>
 						<td>Example item #1</td>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+						<td><button type="update" id="itemUpdate">UPDATE</button></td>
+						<td><button type="delete" id="itemDelete">DELETE</button></td>
 					</tr>
 				</tbody>
 			</table>

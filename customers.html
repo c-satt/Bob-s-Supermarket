@@ -6,6 +6,7 @@
 		<meta charset="UTF-8">
 		<title>Bob's Supermarket</title>
 		<link rel="stylesheet" href="style.css" type="text/css">
+		<link rel="stylesheet" type="text/css" href="tableStyle.css">
 	</head>
 
 	<body>
@@ -25,9 +26,8 @@
 			Using SELECT, INSERT UPDATE, and DELETE from the customes table 
 			Using SELECT from sales table (fk: saleId) and SELECT from the items table (fk: saleId)</h4>
 
-		<!--Need TO DO: 
-			* Allow that form to remove customers (DELETE)
-			* Allow that form to update customers (UPDATE) -->
+		<!--Need TO DO:
+				* nothing-->
 
 			<!--Create form to look up customers (SELECT)
 				firstName, lastName, phoneNumber, email-->
@@ -60,5 +60,34 @@
 					</fieldset>
 				</form>
 			</div>
+
+			<!-- Allow that form to remove customers (DELETE), allow that form to update customers (UPDATE)-->
+			<table>
+				<caption>Customers</caption>
+				<thead>
+					<tr>
+						<!--Row 1 Headers-->
+						<th></th>
+						<th>First name</th>
+						<th>Last name</th>
+						<th>Phone number</th>
+						<th>Zipcode</th>
+						<th>Email</th>
+						<th>Member since date</th>
+						<th>lastTransation</th>
+						<th>Update</th>
+						<th>Delete</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td>Example customer #1</td>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+						<td><button type="update" id="customerUpdate">UPDATE</button></td>
+						<td><button type="delete" id="customerDelete">DELETE</button></td>
+					</tr>
+				</tbody>
+			</table>
 		</section>
 		
