@@ -20,17 +20,48 @@
 		</header>
 
 		<section>
-			Distributor page that allows Bob's Supermarket to see the distributors they buy from.  They will be able to look up distributors to find items, as well as the other way around, they will also be able to update and remove distributors and their items they provide
+			<h4>Distributor page that allows Bob's Supermarket to see the distributors they buy from.  They will be able to look up distributors to find items, as well as the other way around, they will also be able to update and remove distributors and their items they provide
 
 			Using SELECT, INSERT UPDATE, and DELETE from the distributor table 
-			Using SELECT, DELETE from the items table (fk: itemId)
+			Using SELECT, DELETE from the items table (fk: itemId)</h4>
 
 			<!--Need TO DO: 
-				1. Create form to look up distributors (SELECT)
-					name
-				2. allow that form to remove distributors (DELETE)
-				3. allow that form to update distributors (UPDATE)
-				3. Create form to add new distributors into the system
-					name, phoneNumber, address -->
+				* Allow that form to remove distributors (DELETE)
+				* Allow that form to update distributors (UPDATE)-->
+
+
+			<!--Create form to look up distributors (SELECT)
+					name-->
+			<div id="searchDistributor">
+				<form>
+					<fieldset>
+						<legend>Look up distributor</legend>
+						<label>Name: <input type="text" name="name"></label>
+						<label>Phone number: <input type="tel" name="phoneNumber"></label>
+						<button type="submit" id="distributorSearch">SEARCH</button>
+					</fieldset>
+				</form>
+			</div>
+
+			<!--Create form to add new distributors into the system
+					name, phoneNumber, address-->
+			<div id="addDistributor">
+				<form>
+					<fieldset>
+						<legend>Add distributor (can only add one item to one distributor at a time)</legend>
+						<label>Name: <input type="text" name="name"></label>
+						<label>Phone number: <input type="tel" name="phoneNumber"></label>
+						<label>Address: <input type="text" name="address"></label>
+						<label>Item: <input type="text" name="itemName">
+							<!--Meat <input type="checkbox" name="departmentCode">
+							Produce <input type="checkbox" name="departmentCode">
+							Dairy <input type="checkbox" name="departmentCode">
+							Non-perishable <input type="checkbox" name="departmentCode">
+							Dry goods <input type="checkbox" name="departmentCode">-->
+						</label>
+						<button type="submit" id="distributorAdd">ADD DISTRIBUTOR</button>
+					</fieldset>
+				</form>
+			</div>
 		</section>
 		
