@@ -1,0 +1,69 @@
+<!-- -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Bob's Supermarket</title>
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<link rel="stylesheet" type="text/css" href="tableStyle.css">
+	</head>
+
+	<body>
+		<header>
+			<nav class="navigation">
+				<ul>
+					<li class="menu"><a href="index.html">Homepage</a></li>
+					<li class="menu"><a href="items.html">Items</a></li>
+					<li class="menu"><a href="customers.html">Customers</a></li>
+					<li class="menu"><a href="orders.html">Orders</a></li>
+					<li class="menu"><a href="distributors.html">Distributors</a>
+				</ul>
+		</header>
+
+		<section>
+			<h4>Order page that allows Bob's Supermarket to see the orders people have made and their specific items in these orders.  This will allow Bob's Supermarket to see which customers are ordering which items and where they are ordering them from (in store or online)
+
+			Using SELECT from the order table, customer (fk: customerId) and items (fk: itemsId) tables</h4>
+
+		<!--Need TO DO:
+				* nothing-->
+
+			<!--Create form to look up orders (SELECT) using items and customers tables
+				itemType, brand-->
+
+			<div id="searchbyItem">
+				<form>
+					<fieldset>
+						<legend>Look up order by item</legend>
+						<label>Item: <input type="text" name="itemType"></label>
+						<label>Brand: <input type="text" name="brand"></label>
+						<button type="submit" id="itemSearch">SEARCH</button>
+					</fieldset>
+				</form>
+			</div>
+
+			<table>
+				<caption>Orders</caption>
+				<thead>
+					<tr>
+						<!--Row 1 Headers-->
+						<th></th>
+						<th>Item</th>
+						<th>Brand</th>
+						<th>subtotal</th>
+						<th>tax</th>
+						<th>location</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td>Example order #1</td>
+						<td></td><td></td><td></td><td></td><td></td>
+					</tr>
+				</tbody>
+			</table>
+
+		</section>
+		
