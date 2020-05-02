@@ -20,17 +20,50 @@
 		</header>
 
 		<section>
-			Items page that allows Bob's Supermarket to see the items they are selling, able to remove items they dont want to carry anymor, and check if they need more invetory. 
+			<h4>Items page that allows Bob's Supermarket to see the items they are selling, able to remove items they dont want to carry anymor, and check if they need more invetory. 
 
 			Using SELECT, INSERT, and DELETE from the items table  
-			Using SELECT from the distributor table (fk: distributorId)
+			Using SELECT from the distributor table (fk: distributorId)</h4>
 
-			<!--Need TO DO: 
-				1. Create form to look up items (SELECT)
-					itemType, brand
-				2. allow that form to remove items (DELETE)
-				3. allow that form to link with specific distributors 
-				4. Create form to add new items into the system
-					itemType, brand, departmentCode, aisleNumber, description, shape, weight, price, taxable, qty, distributorId, saleId -->
+		<!--Need TO DO: 
+			* Allow search form to remove items (DELETE)
+			* Allow search form to link with specific distributors-->
+
+			<!--Create form to look up items (SELECT)
+					itemType, brand-->
+			<div id="searchItem">
+				<form>
+					<fieldset>
+						<legend>Look up item</legend>
+						<label>Item: <input type="text" name="itemType"></label>
+						<label>Brand: <input type="text" name="brand"></label>
+						<button type="submit" id="search">SEARCH</button>
+					</fieldset>
+				</form>
+			</div>
+
+			<!--Create form to add new items into the system
+					itemType, brand, departmentCode, aisleNumber, description, shape(might not need this one), weight(might not need this one), price, taxable, qty, and distributorId (name)-->
+			<div id="addItem">
+				<form>
+					<fieldset>
+						<legend>Add new item</legend>
+						<label>Item: <input type="text" name="itemType"></label>
+						<label>Brand: <input type="text" name="brand"></label>
+						<label>Department: <input type="text" name="departmentCode"></label>
+						<label>Aisle number: <input type="number" name="aisleNumber"></label>
+						<label>Description: <input type="text" name="description"></label>
+						<label>Price: <input type="number" name="price"></label>
+						<label>Taxable: 
+							Yes <input type="radio" name="taxable" value="Yes"> 
+							No <input type="radio" name="taxable" value="No">
+						</label>
+						<label>Quantity: <input type="number" name="qty"></label>
+						<label>Distributor name: <input type="text" name="name"></label> <!--distributor name-->
+						<button type="submit" id="add">ADD ITEM</button>
+					</fieldset>
+				</form>
+				
+			</div>
 			
 		</section>
