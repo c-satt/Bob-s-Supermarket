@@ -43,6 +43,25 @@
 				</form>
 			</div>
 
+			<!--Create form to add new orders into the system
+					Customers, Items, saleDate, subtotal, tax, location-->
+			<div id="addDistributor">
+				<form>
+					<fieldset>
+						<legend>Add an order</legend>
+						<label>Customer first name <input type="text" name="customerFirstName"></label>
+						<label>Customer last name <input type="text" name="customerLastName"></label>
+						<label>Customer Phone number: <input type="tel" name="phoneNumber"></label>
+						<label>Sale Date: <input type="date" name="saleDate"></label>
+						<label>Item: <input type="text" name="items"></label>
+						<label>Tax: <input type="number" name="tax"></label>
+						<label>Location: Online or In-store<input type="text" name="location"></label>
+		
+						<button type="submit" id="distributorAdd">ADD ORDER</button>
+					</fieldset>
+				</form>
+			</div>
+
 			<table>
 				<caption>Orders</caption>
 				<thead>
